@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Snazzy Paws Grooming and find our location."
+    />
+    <title>Contact | Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header>
+      <nav aria-label="Main navigation">
+        <a class="logo" href="index.html">Snazzy Paws Grooming</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section aria-labelledby="contact-heading">
+        <h1 id="contact-heading">Contact Us</h1>
+        <p class="intro">
+          Have a question? Send us a message or pop in and see us. Fields marked
+          * are required.
+        </p>
+        <div class="contact-layout">
+          <div class="map">
+            <h2>Find us</h2>
+            <iframe
+              src="https://www.google.com/maps?q=Ponsonby,+Auckland,+New+Zealand&amp;output=embed"
+              title="Google Map showing the location of Snazzy Paws Grooming in Ponsonby, Auckland"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div>
+            <h2>Send a message</h2>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="contact-name">Name *</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email address *</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="comment">Comment *</label>
+                <textarea
+                  id="comment"
+                  name="comment"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <button type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Opening Hours</h2>
+      <dl>
+        <dt>Monday &ndash; Friday</dt>
+        <dd>8:00am &ndash; 5:30pm</dd>
+        <dt>Saturday</dt>
+        <dd>9:00am &ndash; 3:00pm</dd>
+        <dt>Sunday</dt>
+        <dd>Closed</dd>
+      </dl>
+      <p>&copy; 2026 Snazzy Paws Grooming</p>
+    </footer>
+  </body>
+</html>

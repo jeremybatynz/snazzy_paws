@@ -1,0 +1,328 @@
+/* Snazzy Paws Grooming - stylesheet */
+
+/* Colours */
+:root {
+    --blue: #1f4e79;
+    --yellow: #f4b942;
+    --text: #222222;
+    --light: #f3f6f9;
+}
+
+/* Basics */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.service-cards img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+h1,
+h3 {
+    color: var(--blue);
+}
+
+a {
+    color: var(--blue);
+}
+
+/* Keyboard focus */
+:focus-visible {
+    outline: 3px solid var(--yellow);
+    outline-offset: 2px;
+}
+
+
+/* .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+} */
+
+/* Header and navigation */
+header,
+footer {
+    background: var(--blue);
+    color: #ffffff;
+}
+
+nav {
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a[aria-current="page"],
+.nav-cta {
+    background: var(--yellow);
+    color: #000000;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--blue);
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Home page bands */
+main.home {
+    max-width: none;
+    padding: 0;
+}
+
+.band {
+    padding: 2.5rem 1rem;
+}
+
+.band h2 {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.band-about {
+    background: #dcdcd9;
+}
+
+.band-services {
+    background: #ececec;
+}
+
+.band-owners {
+    background: #d6c6c6;
+}
+
+/* Two-column and grid layouts */
+.split,
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-layout {
+    align-items: start;
+}
+
+.service-cards,
+.gallery {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.service-cards h3 {
+    margin: 0.5rem 0 0;
+}
+
+.service-cards p {
+    margin: 0;
+}
+
+.gallery img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Services table */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid #c9d3dd;
+    text-align: left;
+}
+
+thead th {
+    background: var(--blue);
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--light);
+}
+
+.price {
+    white-space: nowrap;
+}
+
+/* Forms */
+form {
+    max-width: 600px;
+    padding: 1.5rem;
+    background: var(--light);
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font: inherit;
+    border: 1px solid #767676;
+    border-radius: 8px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font: inherit;
+    font-weight: bold;
+    color: #ffffff;
+    background: var(--blue);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Map */
+.map iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+footer h2 {
+    color: var(--yellow);
+}
+
+footer dt {
+    font-weight: bold;
+}
+
+footer dd {
+    margin: 0 0 0.5rem;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .split,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .service-cards,
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phones */
+@media (max-width: 500px) {
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+}
